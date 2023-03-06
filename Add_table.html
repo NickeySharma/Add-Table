@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Adding Row using JS</title>
+
+</head>
+<body>
+<script type="text/javascript" lang="javascript">
+var counter=1;
+function row()
+{
+  var x = document.getElementById("tb1").innerHTML;
+  var y = "<tr><td>"+counter+"</td><td><input type='text'></td><td><input type='text'></td><td><input type='text'></td><td><input type='text'></td></tr>";
+     document.getElementById("tb1").innerHTML=x+y;
+     counter+=1;
+}
+</script>
+<h3>Desired Output</h3>
+<table border="2px" height="40px" width="40px" id="tb1">
+<tr><th>Sr<br>No.</th><th>University/Board</th><th>Passing Year</th><th>Total Marks</th><th>Obtain Marks</th></tr>
+</table><br>
+<input type="button" onclick="row()" value="ADD ROW">
+</body>
+</html>
